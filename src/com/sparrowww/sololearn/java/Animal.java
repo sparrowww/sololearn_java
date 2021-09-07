@@ -10,6 +10,9 @@ public class Animal {
         System.out.println("The Animal was born. ID = " + animalId );
         animalType = "UNKNOWN";
     }
+    protected int getAnimalId(){
+        return animalId;
+    }
     protected void printAnimalType(){
         System.out.println( "animalType = " + animalType );
     }
