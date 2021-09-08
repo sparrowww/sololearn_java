@@ -20,7 +20,7 @@ public class Main {
         animal.eat();
     }
     public static void catTest(){
-        Cat cat = new Cat();
+        Animal cat = new Cat();
         cat.printAnimalType();
         cat.eat();
     }
