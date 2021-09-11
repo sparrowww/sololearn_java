@@ -1,4 +1,4 @@
-package com.sparrowww.sololearn.java;
+package com.sparrowww.sololearn.java.mystatic;
 
 public class CalcPoint {
     public static int Point;

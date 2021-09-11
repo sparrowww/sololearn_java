@@ -1,7 +1,6 @@
-package com.sparrowww.sololearn.java;
+package com.sparrowww.sololearn.java.mypolymorpism;
 
 public class Animal {
-
     private int animalId;
     protected String animalType;
 
@@ -13,10 +12,11 @@ public class Animal {
     protected int getAnimalId(){
         return animalId;
     }
-    protected void printAnimalType(){
+    public void printAnimalType(){
         System.out.println( "animalType = " + animalType );
     }
-    protected void eat(){
+    public void eat(){
         System.out.println( "AM-AM-AM" );
     }
 }
+

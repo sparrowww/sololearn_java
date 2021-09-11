@@ -1,6 +1,6 @@
-package com.sparrowww.sololearn.java;
+package com.sparrowww.sololearn.java.mypolymorpism;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
     public Cat(){
         int idParent = super.getAnimalId();
         System.out.println("The Cat was born. ID = " + idParent);
@@ -8,7 +8,7 @@ public class Cat extends Animal{
     }
 
     @Override
-    protected void eat(){
+    public void eat(){
         System.out.println( "NYAM-NYAM" );
     }
 }
