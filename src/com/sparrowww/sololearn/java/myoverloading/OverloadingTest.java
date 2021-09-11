@@ -1,4 +1,4 @@
-package com.sparrowww.sololearn.java;
+package com.sparrowww.sololearn.java.myoverloading;
 
 public class OverloadingTest {
     public void print ( int param ){

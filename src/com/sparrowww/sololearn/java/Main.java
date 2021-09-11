@@ -1,8 +1,10 @@
 package com.sparrowww.sololearn.java;
 
 import com.sparrowww.sololearn.java.myabstract.*;
+import com.sparrowww.sololearn.java.myoverloading.*;
 import com.sparrowww.sololearn.java.mypolymorpism.*;
 import com.sparrowww.sololearn.java.mystatic.*;
+import com.sparrowww.sololearn.java.myinterface.*;
 
 import java.util.Scanner;
 
@@ -17,7 +19,8 @@ public class Main {
         //staticTest();
         //ScannerTest();
         //OverloadTest();
-        AbstractTest();
+        //AbstractTest();
+        InterfaceTest();
     }
 
     public static void animalTest(){
@@ -29,13 +32,12 @@ public class Main {
         cat.printAnimalType();
         cat.eat();
     }
-
     public static void staticTest(){
-        MyPrint.print("");
-        MyPrint.print("Static func is interesting!");
+        CalcPoint.printPoint();
         CalcPoint.touchPoint();
+        CalcPoint.printPoint();
         CalcPoint.touchPoint();
-        MyPrint.print("");
+        CalcPoint.printPoint();
     }
     public static void ScannerTest(){
         Scanner read = new Scanner(System.in);
@@ -51,6 +53,17 @@ public class Main {
     }
     public static void AbstractTest(){
         AbstractBook absBook = new HorrorBook();
+        int randNumPages = (int) (Math.random() * 1000);
+        absBook.setPage(randNumPages);
         absBook.reading();
+    }
+    public static void InterfaceTest(){
+        Car car = new Car();
+        car.myWayIs();
+        car.myFuelIs();
+
+        Train train = new Train();
+        train.myWayIs();
+        train.myFuelIs();
     }
 }
