@@ -5,6 +5,7 @@ import com.sparrowww.sololearn.java.myoverloading.*;
 import com.sparrowww.sololearn.java.mypolymorpism.*;
 import com.sparrowww.sololearn.java.mystatic.*;
 import com.sparrowww.sololearn.java.myinterface.*;
+import com.sparrowww.sololearn.java.mytypecasting.*;
 
 import java.util.Scanner;
 
@@ -20,7 +21,8 @@ public class Main {
         //ScannerTest();
         //OverloadTest();
         //AbstractTest();
-        InterfaceTest();
+        //InterfaceTest();
+        //TCastTest();
     }
 
     public static void animalTest(){
@@ -65,5 +67,12 @@ public class Main {
         Train train = new Train();
         train.myWayIs();
         train.myFuelIs();
+    }
+    public static void TCastTest(){
+        TypeCastingTest castT = new TypeCastingTest();
+        //castT.testCast();
+        //castT.arrTest();
+        //castT.upcastingTest();
+        castT.downcastingTest();
     }
 }
