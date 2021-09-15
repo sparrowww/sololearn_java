@@ -1,8 +1,8 @@
 package com.sparrowww.sololearn.java.mytypecasting;
 
-import com.sparrowww.sololearn.java.mypolymorpism.*;
+import com.sparrowww.sololearn.java.mypolymorphism.*;
 
-public class TypeCastingTest {
+public class MyTypeCasting {
     public void testCast () {
         int iVar = (int) 3.14; // loss of precision. Need casting!!!
         System.out.println("testCast iVar = " + iVar);

@@ -1,4 +1,4 @@
-package com.sparrowww.sololearn.java.mypolymorpism;
+package com.sparrowww.sololearn.java.mypolymorphism;
 
 public class Dog extends Animal {
     public Dog(){

@@ -1,6 +1,6 @@
 package com.sparrowww.sololearn.java.myoverloading;
 
-public class OverloadingTest {
+public class MyOverloading {
     public void print ( int param ){
         System.out.println("OverloadingTest INT param = " + param);
     }
