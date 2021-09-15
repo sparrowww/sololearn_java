@@ -2,6 +2,7 @@ package com.sparrowww.sololearn.java;
 
 import com.sparrowww.sololearn.java.myabstract.MyAbstractMain;
 import com.sparrowww.sololearn.java.myanonymous.MyAnonymousMain;
+import com.sparrowww.sololearn.java.myinnerclass.MyInnerMain;
 import com.sparrowww.sololearn.java.myinterface.MyInterfaceMain;
 import com.sparrowww.sololearn.java.myoverloading.MyOverloadingMain;
 import com.sparrowww.sololearn.java.mypolymorphism.MyPolymorphismMain;
@@ -24,6 +25,7 @@ public class Main {
         //MyInterfaceMain.example();
         //MyTypeCastingMain.examle();
         //MyAnonymousMain.example();
+        MyInnerMain.example();
     }
 
     public static void ScannerTest(){
