@@ -25,7 +25,7 @@ public class Main {
         //MyInterfaceMain.example();
         //MyTypeCastingMain.examle();
         //MyAnonymousMain.example();
-        MyInnerMain.example();
+        //MyInnerMain.example();
     }
 
     public static void ScannerTest(){
