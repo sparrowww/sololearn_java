@@ -2,6 +2,7 @@ package com.sparrowww.sololearn.java;
 
 import com.sparrowww.sololearn.java.myabstract.MyAbstractMain;
 import com.sparrowww.sololearn.java.myanonymous.MyAnonymousMain;
+import com.sparrowww.sololearn.java.myenums.MyEnumsMain;
 import com.sparrowww.sololearn.java.myequalsobj.MyEqualsMain;
 import com.sparrowww.sololearn.java.myinnerclass.MyInnerMain;
 import com.sparrowww.sololearn.java.myinterface.MyInterfaceMain;
@@ -28,6 +29,7 @@ public class Main {
         //MyAnonymousMain.example();
         //MyInnerMain.example();
         //MyEqualsMain.example();
+        //MyEnumsMain.example();
     }
 
     public static void ScannerTest(){
