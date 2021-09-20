@@ -6,6 +6,7 @@ import com.sparrowww.sololearn.java.myenums.MyEnumsMain;
 import com.sparrowww.sololearn.java.myequalsobj.MyEqualsMain;
 import com.sparrowww.sololearn.java.myinnerclass.MyInnerMain;
 import com.sparrowww.sololearn.java.myinterface.MyInterfaceMain;
+import com.sparrowww.sololearn.java.myjavaapi.MyJavaAPIMain;
 import com.sparrowww.sololearn.java.myoverloading.MyOverloadingMain;
 import com.sparrowww.sololearn.java.mypolymorphism.MyPolymorphismMain;
 import com.sparrowww.sololearn.java.mystatic.MyStaticMain;
@@ -30,6 +31,7 @@ public class Main {
         //MyInnerMain.example();
         //MyEqualsMain.example();
         //MyEnumsMain.example();
+        //MyJavaAPIMain.example();
     }
 
     public static void ScannerTest(){
