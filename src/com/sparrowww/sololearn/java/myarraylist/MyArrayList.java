@@ -13,6 +13,11 @@ public class MyArrayList {
     public void copy(MyArrayList o){
         this.num = o.num;
     }
+    public void swap(MyArrayList o){
+        int old = this.num;
+        this.num = o.num;
+        o.num = old;
+    }
     private void printMsg(){
         System.out.println("MyArrayList:" + num);
     }
@@ -35,10 +40,7 @@ public class MyArrayList {
         mArL.remove(0);
         System.out.println("mArL.size() = " + mArL.size());
 
-        MyArrayList tmp = new MyArrayList();
-        tmp.copy(mArL.get(0));
-        mArL.get(0).copy(mArL.get(mArL.size()-1));
-        mArL.get(mArL.size()-1).copy(tmp);
+        mArL.get(0).swap( mArL.get(mArL.size()-1));
 
         for(MyArrayList m: mArL)
         {
