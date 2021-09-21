@@ -2,6 +2,8 @@ package com.sparrowww.sololearn.java;
 
 import com.sparrowww.sololearn.java.myabstract.MyAbstractMain;
 import com.sparrowww.sololearn.java.myanonymous.MyAnonymousMain;
+import com.sparrowww.sololearn.java.myarraylist.MyArrayMain;
+import com.sparrowww.sololearn.java.myenums.MyEnums;
 import com.sparrowww.sololearn.java.myenums.MyEnumsMain;
 import com.sparrowww.sololearn.java.myequalsobj.MyEqualsMain;
 import com.sparrowww.sololearn.java.myexceptions.MyExceptionsMain;
@@ -21,6 +23,9 @@ public class Main {
     public static void main(String[] args){
 	// write your code here
         System.out.println("Hello, World!!!");
+        SLEEP(1);
+
+        MyArrayMain.example();
 
         //ScannerTest();
         //MyPolymorphismMain.examle();
@@ -35,14 +40,22 @@ public class Main {
         //MyEnumsMain.example();
         //MyJavaAPIMain.example();
         //MyExceptionsMain.example();
-        MyThreadMain.runThread();
-        MyThreadMain.runRunnableThread();
-        MyThreadMainLoop.runMainLoop();
+        //MyThreadMain.runThread();
+        //MyThreadMain.runRunnableThread();
+        //MyThreadMainLoop.runMainLoop();
     }
 
     public static void ScannerTest(){
         Scanner read = new Scanner(System.in);
         String name  = read.nextLine();
         int a = read.nextInt();
+    }
+
+    public static void SLEEP(long millis){
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
