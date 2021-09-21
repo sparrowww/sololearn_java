@@ -12,12 +12,13 @@ import com.sparrowww.sololearn.java.myoverloading.MyOverloadingMain;
 import com.sparrowww.sololearn.java.mypolymorphism.MyPolymorphismMain;
 import com.sparrowww.sololearn.java.mystatic.MyStaticMain;
 import com.sparrowww.sololearn.java.mytypecasting.MyTypeCastingMain;
+import com.sparrowww.sololearn.java.mythreads.*;
 
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 	// write your code here
         System.out.println("Hello, World!!!");
 
@@ -34,6 +35,9 @@ public class Main {
         //MyEnumsMain.example();
         //MyJavaAPIMain.example();
         //MyExceptionsMain.example();
+        MyThreadMain.runThread();
+        MyThreadMain.runRunnableThread();
+        MyThreadMainLoop.runMainLoop();
     }
 
     public static void ScannerTest(){
