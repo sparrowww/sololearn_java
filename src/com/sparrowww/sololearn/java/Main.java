@@ -25,8 +25,7 @@ public class Main {
         System.out.println("Hello, World!!!");
         SLEEP(1);
 
-        MyArrayMain.example();
-
+        //MyArrayMain.example();
         //ScannerTest();
         //MyPolymorphismMain.examle();
         //MyStaticMain.example();
