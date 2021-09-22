@@ -7,6 +7,7 @@ import com.sparrowww.sololearn.java.myenums.MyEnums;
 import com.sparrowww.sololearn.java.myenums.MyEnumsMain;
 import com.sparrowww.sololearn.java.myequalsobj.MyEqualsMain;
 import com.sparrowww.sololearn.java.myexceptions.MyExceptionsMain;
+import com.sparrowww.sololearn.java.myhashmap.MyHashMapMain;
 import com.sparrowww.sololearn.java.myinnerclass.MyInnerMain;
 import com.sparrowww.sololearn.java.myinterface.MyInterfaceMain;
 import com.sparrowww.sololearn.java.myjavaapi.MyJavaAPIMain;
@@ -26,8 +27,10 @@ public class Main {
         //SLEEP(10);
 
         startTimeMesure();
-
+        MyHashMapMain.example();
         finishTimeMesure();
+
+        //testPerfConcatStr();
 
         //MyLinkedListMain.example();
         //MyArrayMain.example();
@@ -49,13 +52,26 @@ public class Main {
         //MyThreadMainLoop.runMainLoop();
     }
 
-    public static void ScannerTest(){
+    private static void testPerfConcatStr(){
+        startTimeMesure();
+        int i = 45;
+        String s = "s = 123".concat(Integer.toString(i)).concat("678");
+        System.out.println(s);
+        finishTimeMesure();
+
+        startTimeMesure();
+        int i1 = 45;
+        String s1 = "s1 = 123" + i1 + "678";
+        System.out.println(s1);
+        finishTimeMesure();
+    }
+    private static void ScannerTest(){
         Scanner read = new Scanner(System.in);
         String name  = read.nextLine();
         int a = read.nextInt();
     }
 
-    public static void SLEEP(long millis){
+    private static void SLEEP(long millis){
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
@@ -64,10 +80,10 @@ public class Main {
     }
     private static long startTime;
     private static long finishTime;
-    public static void startTimeMesure(){
+    private static void startTimeMesure(){
         startTime = System.currentTimeMillis();
     }
-    public static void finishTimeMesure(){
+    private static void finishTimeMesure(){
         finishTime = System.currentTimeMillis();
         long elapsed = finishTime - startTime;
         System.out.println("Прошло времени, мс: " + elapsed);
