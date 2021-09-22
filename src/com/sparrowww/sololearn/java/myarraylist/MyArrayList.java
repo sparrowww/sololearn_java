@@ -4,9 +4,6 @@ import java.util.ArrayList;
 
 public class MyArrayList {
     private int num;
-    public MyArrayList(){
-        this.num = -1;
-    }
     public MyArrayList(int num){
         this.num = num;
     }
@@ -26,20 +23,21 @@ public class MyArrayList {
         final int SIZEARR = 5;
         ArrayList <MyArrayList> mArL = new ArrayList<>();
         System.out.println("mArL.size() = " + mArL.size());
-        for (int i = 0; i < SIZEARR; i ++)
+        while (mArL.size() < SIZEARR)
         {
-            mArL.add(new MyArrayList(i));
+            mArL.add(new MyArrayList((int)(Math.random()*100)));
         }
         System.out.println("mArL.size() = " + mArL.size());
 
-        mArL.add(mArL.size(),new MyArrayList(SIZEARR+0));
-        mArL.add(mArL.size(),new MyArrayList(SIZEARR+1));
-        mArL.add(mArL.size(),new MyArrayList(SIZEARR+2));
+        mArL.add(0,new MyArrayList(0));
+        mArL.add(mArL.size(),new MyArrayList((int)(Math.random()*100)));
+        mArL.add(mArL.size(),new MyArrayList(65000));
         System.out.println("mArL.size() = " + mArL.size());
 
-        mArL.remove(0);
+        mArL.remove(mArL.remove(mArL.size()/2));
+        mArL.remove(mArL.remove(mArL.size()/2));
         System.out.println("mArL.size() = " + mArL.size());
-
+        mArL.get(1).copy(mArL.get(0));
         mArL.get(0).swap( mArL.get(mArL.size()-1));
 
         for(MyArrayList m: mArL)
