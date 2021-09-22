@@ -21,7 +21,7 @@ public class MyArrayList {
     public static void MyArrayListTest()
     {
         final int SIZEARR = 5;
-        ArrayList <MyArrayList> mArL = new ArrayList<>();
+        ArrayList <MyArrayList> mArL = new ArrayList<>(1);
         System.out.println("mArL.size() = " + mArL.size());
         while (mArL.size() < SIZEARR)
         {

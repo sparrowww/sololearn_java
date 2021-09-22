@@ -10,6 +10,7 @@ import com.sparrowww.sololearn.java.myexceptions.MyExceptionsMain;
 import com.sparrowww.sololearn.java.myinnerclass.MyInnerMain;
 import com.sparrowww.sololearn.java.myinterface.MyInterfaceMain;
 import com.sparrowww.sololearn.java.myjavaapi.MyJavaAPIMain;
+import com.sparrowww.sololearn.java.mylinkedlist.MyLinkedListMain;
 import com.sparrowww.sololearn.java.myoverloading.MyOverloadingMain;
 import com.sparrowww.sololearn.java.mypolymorphism.MyPolymorphismMain;
 import com.sparrowww.sololearn.java.mystatic.MyStaticMain;
@@ -19,12 +20,16 @@ import com.sparrowww.sololearn.java.mythreads.*;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args){
 	// write your code here
         System.out.println("Hello, World!!!");
-        SLEEP(1);
+        //SLEEP(10);
 
+        startTimeMesure();
+
+        finishTimeMesure();
+
+        //MyLinkedListMain.example();
         //MyArrayMain.example();
         //ScannerTest();
         //MyPolymorphismMain.examle();
@@ -56,5 +61,15 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+    private static long startTime;
+    private static long finishTime;
+    public static void startTimeMesure(){
+        startTime = System.currentTimeMillis();
+    }
+    public static void finishTimeMesure(){
+        finishTime = System.currentTimeMillis();
+        long elapsed = finishTime - startTime;
+        System.out.println("Прошло времени, мс: " + elapsed);
     }
 }
