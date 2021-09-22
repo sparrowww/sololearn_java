@@ -1,5 +1,7 @@
 package com.sparrowww.sololearn.java.myhashmap;
 
+import com.sparrowww.sololearn.java.Print;
+
 import java.util.HashMap;
 
 public class MyHashMapMain {
@@ -11,13 +13,10 @@ public class MyHashMapMain {
         myHM.put("BLUE", 64);
 
         Integer intValue = myHM.get("ALEX");
-        if (intValue == null) intValue = -1;
-        String s = "intValue = ".concat(intValue.toString()).concat(", myHM.size() = ").concat(Integer.toString(myHM.size()));
-        System.out.println(s);
+        Print.printStrings(intValue,myHM.size());
+
         myHM.remove("ALEX");
         intValue = myHM.get("ALEX");
-        if (intValue == null) intValue = -1;
-        s = "intValue = ".concat(intValue.toString()).concat(", myHM.size() = ").concat(Integer.toString(myHM.size()));
-        System.out.println(s);
+        Print.printStrings(intValue,myHM.size());
     }
 }
