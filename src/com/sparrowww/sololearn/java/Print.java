@@ -10,4 +10,14 @@ public class Print {
         }
         System.out.println(str);
     }
+    public static void printTextPlusParam( String text, Object param ){
+        String str="";
+        if (text == null) text = "null";
+        if (param == null) param = "null";
+        str = str.concat(text).concat("=").concat(param.toString());
+        System.out.println(str);
+    }
+    public static void printTextPlusParam( Object param ){
+        printTextPlusParam("param", param);
+    }
 }
