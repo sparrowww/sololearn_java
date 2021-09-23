@@ -11,6 +11,7 @@ import com.sparrowww.sololearn.java.myhashmap.MyHashMapMain;
 import com.sparrowww.sololearn.java.myhashset.MyHashSetMain;
 import com.sparrowww.sololearn.java.myinnerclass.MyInnerMain;
 import com.sparrowww.sololearn.java.myinterface.MyInterfaceMain;
+import com.sparrowww.sololearn.java.myiterators.MyIteratorsMain;
 import com.sparrowww.sololearn.java.myjavaapi.MyJavaAPIMain;
 import com.sparrowww.sololearn.java.mylinkedlist.MyLinkedListMain;
 import com.sparrowww.sololearn.java.myoverloading.MyOverloadingMain;
@@ -29,7 +30,7 @@ public class Main {
         //SLEEP(10);
 
         startTimeMesure();
-
+        MyIteratorsMain.example();
         finishTimeMesure();
 
         //MySortingListMain.example();
