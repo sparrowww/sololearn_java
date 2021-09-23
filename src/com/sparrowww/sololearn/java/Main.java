@@ -28,13 +28,12 @@ public class Main {
         //SLEEP(10);
 
         startTimeMesure();
-        MyHashSetMain.example();
+
         finishTimeMesure();
 
+        //MyHashSetMain.example();
         //MyHashMapMain.example();
-
         //testPerfConcatStr();
-
         //MyLinkedListMain.example();
         //MyArrayMain.example();
         //ScannerTest();
