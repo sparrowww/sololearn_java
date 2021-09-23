@@ -7,6 +7,7 @@ import com.sparrowww.sololearn.java.myenums.MyEnums;
 import com.sparrowww.sololearn.java.myenums.MyEnumsMain;
 import com.sparrowww.sololearn.java.myequalsobj.MyEqualsMain;
 import com.sparrowww.sololearn.java.myexceptions.MyExceptionsMain;
+import com.sparrowww.sololearn.java.myfilestest.MyFileTestMain;
 import com.sparrowww.sololearn.java.myhashmap.MyHashMapMain;
 import com.sparrowww.sololearn.java.myhashset.MyHashSetMain;
 import com.sparrowww.sololearn.java.myinnerclass.MyInnerMain;
@@ -30,9 +31,10 @@ public class Main {
         //SLEEP(10);
 
         startTimeMesure();
-        MyIteratorsMain.example();
+        MyFileTestMain.example();
         finishTimeMesure();
 
+        //MyIteratorsMain.example();
         //MySortingListMain.example();
         //MyHashSetMain.example();
         //MyHashMapMain.example();
