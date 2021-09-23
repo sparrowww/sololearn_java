@@ -20,4 +20,9 @@ public class Print {
     public static void printTextPlusParam( Object param ){
         printTextPlusParam("param", param);
     }
+    public static void printText( Object text ){
+        String str="";
+        if (text == null) text = "null";
+        System.out.println(text);
+    }
 }
