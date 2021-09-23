@@ -8,6 +8,7 @@ import com.sparrowww.sololearn.java.myenums.MyEnumsMain;
 import com.sparrowww.sololearn.java.myequalsobj.MyEqualsMain;
 import com.sparrowww.sololearn.java.myexceptions.MyExceptionsMain;
 import com.sparrowww.sololearn.java.myhashmap.MyHashMapMain;
+import com.sparrowww.sololearn.java.myhashset.MyHashSetMain;
 import com.sparrowww.sololearn.java.myinnerclass.MyInnerMain;
 import com.sparrowww.sololearn.java.myinterface.MyInterfaceMain;
 import com.sparrowww.sololearn.java.myjavaapi.MyJavaAPIMain;
@@ -27,8 +28,10 @@ public class Main {
         //SLEEP(10);
 
         startTimeMesure();
-        MyHashMapMain.example();
+        MyHashSetMain.example();
         finishTimeMesure();
+
+        //MyHashMapMain.example();
 
         //testPerfConcatStr();
 
