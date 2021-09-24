@@ -2,11 +2,52 @@ package com.sparrowww.sololearn.java.myhashmap;
 
 import com.sparrowww.sololearn.java.Print;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class MyHashMapMain {
+    private static final boolean flLambda = false;
+    public static void exampleSearchMax() {
+        HashMap<String,Integer> mapPlayer = new HashMap<>();
+        String firstPlayer = "Alex 46"; parseString(mapPlayer,firstPlayer);
+        String secondPlayer = "Tom 147"; parseString(mapPlayer,secondPlayer);
+        String thirdPlayer = "Rob 11"; parseString(mapPlayer,thirdPlayer);
+
+        if (flLambda) {
+            AtomicInteger atomInt = new AtomicInteger(0);
+            AtomicReference<String> winnerName = new AtomicReference<>("");
+            mapPlayer.forEach((Str, Int) -> {
+                if (atomInt.get() < Int) {
+                    atomInt.set(Int);
+                    winnerName.set(Str);
+                }
+            });
+            Print.printTextPlusParam(winnerName.get(), atomInt.get());
+        }
+        else {
+            String[] myStr = mapPlayer.keySet().toArray(new String[0]);
+            int maxPoint = 0;
+            String nameWinner = "";
+            for (String s:myStr) {
+                int tmp = mapPlayer.get(s);
+                if (maxPoint < tmp) {
+                    maxPoint = tmp;
+                    nameWinner = s;
+                }
+            }
+            Print.printTextPlusParam(nameWinner, maxPoint);
+        }
+
+    }
+    private static void parseString( HashMap<String,Integer> mMap, String mStr){
+        String[] values = mStr.split(" ");
+        String name = values[0];
+        int points = Integer.parseInt(values[1]);
+        mMap.put(name, points);
+    }
+
     public static void example(){
         HashMap<String,Integer> myHM = new HashMap<>();
         myHM.put("Hello", 0);
@@ -47,8 +88,5 @@ public class MyHashMapMain {
         }
 
         Print.printTextPlusParam(myHM);
-
-
-
     }
 }

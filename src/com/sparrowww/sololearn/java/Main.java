@@ -32,7 +32,7 @@ public class Main {
         //SLEEP(10);
 
         startTimeMesure();
-
+        MyHashMapMain.exampleSearchMax();
         finishTimeMesure();
 
         //MyFileWritingMain.example();
