@@ -2,12 +2,40 @@ package com.sparrowww.sololearn.java.myhashmap;
 
 import com.sparrowww.sololearn.java.Print;
 
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class MyHashMapMain {
+    public static void exampleEntry(){
+        HashMap<String, Integer> mMap = new HashMap<>();
+        mMap.put("A", 0);
+        mMap.put("B", 1);
+        mMap.put("C", 2);
+
+        for (String s:mMap.keySet())
+        {
+            Print.printTextPlusParam(s,mMap.get(s));
+        }
+
+        for (HashMap.Entry<String,Integer> mMapEntry:mMap.entrySet())
+        {
+            Print.printTextPlusParam(mMapEntry.getKey(), mMapEntry.getValue());
+        }
+
+        // Создаем кортежи и выводим их
+        Map.Entry<String,Integer> mSE = new AbstractMap.SimpleEntry<>("s0", 0);
+        Print.printTextPlusParam(mSE.getKey(), mSE.getValue());
+        ArrayList<Map.Entry<String,Integer>> arrList = new ArrayList<>();
+        arrList.add(new AbstractMap.SimpleEntry<>("s1", 123));
+        arrList.add(new AbstractMap.SimpleEntry<>("s2", 456));
+        arrList.add(new AbstractMap.SimpleEntry<>("s3", 789));
+
+        for(Map.Entry<String,Integer> mSE1:arrList)
+        {
+            Print.printTextPlusParam(mSE1.getKey(), mSE1.getValue());
+        }
+    }
     private static final boolean flLambda = false;
     public static void exampleSearchMax() {
         HashMap<String,Integer> mapPlayer = new HashMap<>();
