@@ -1,26 +1,7 @@
 package com.sparrowww.sololearn.java;
 
-import com.sparrowww.sololearn.java.myabstract.MyAbstractMain;
-import com.sparrowww.sololearn.java.myanonymous.MyAnonymousMain;
-import com.sparrowww.sololearn.java.myarraylist.MyArrayMain;
-import com.sparrowww.sololearn.java.myenums.MyEnums;
-import com.sparrowww.sololearn.java.myenums.MyEnumsMain;
-import com.sparrowww.sololearn.java.myequalsobj.MyEqualsMain;
-import com.sparrowww.sololearn.java.myexceptions.MyExceptionsMain;
-import com.sparrowww.sololearn.java.myfilestest.MyFileTestMain;
-import com.sparrowww.sololearn.java.myhashmap.MyHashMapMain;
-import com.sparrowww.sololearn.java.myhashset.MyHashSetMain;
-import com.sparrowww.sololearn.java.myinnerclass.MyInnerMain;
-import com.sparrowww.sololearn.java.myinterface.MyInterfaceMain;
-import com.sparrowww.sololearn.java.myiterators.MyIteratorsMain;
-import com.sparrowww.sololearn.java.myjavaapi.MyJavaAPIMain;
-import com.sparrowww.sololearn.java.mylinkedlist.MyLinkedListMain;
-import com.sparrowww.sololearn.java.myoverloading.MyOverloadingMain;
-import com.sparrowww.sololearn.java.mypolymorphism.MyPolymorphismMain;
-import com.sparrowww.sololearn.java.mysortinglist.MySortingListMain;
-import com.sparrowww.sololearn.java.mystatic.MyStaticMain;
-import com.sparrowww.sololearn.java.mytypecasting.MyTypeCastingMain;
-import com.sparrowww.sololearn.java.mythreads.*;
+import com.sparrowww.sololearn.java.myfilestest.MyFileReadingMain;
+import com.sparrowww.sololearn.java.myfilestest.MyFileWritingMain;
 
 import java.util.Scanner;
 
@@ -31,9 +12,11 @@ public class Main {
         //SLEEP(10);
 
         startTimeMesure();
-        MyFileTestMain.example();
+
         finishTimeMesure();
 
+        //MyFileWritingMain.example();
+        //MyFileReadingMain.example();
         //MyIteratorsMain.example();
         //MySortingListMain.example();
         //MyHashSetMain.example();

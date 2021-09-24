@@ -1,0 +1,7 @@
+Hello, World!
+123456789
+String = йцукен
+float = 3,14159
+int = 42
+boolean = true
+My in Str = Привет!!!
