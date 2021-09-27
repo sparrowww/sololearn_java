@@ -22,6 +22,7 @@ import com.sparrowww.java.sololearn.mystatic.MyStaticMain;
 import com.sparrowww.java.sololearn.mythreads.MyThreadMain;
 import com.sparrowww.java.sololearn.mythreads.MyThreadMainLoop;
 import com.sparrowww.java.sololearn.mytypecasting.MyTypeCastingMain;
+import com.sparrowww.java.virtschool.*;
 
 import java.util.Scanner;
 
@@ -33,10 +34,11 @@ public class Main {
         //SLEEP(10);
 
         startTimeMeasure();
-        MyHashMapMain.exampleEntry();
+        MyBasicsJava1 obj = new MyBasicsJava1();
         finishTimeMeasure();
 
         if (FLAG_NO_EXECUTE) {
+            MyHashMapMain.exampleEntry();
             MyHashMapMain.exampleSearchMax();
             MyFileWritingMain.example();
             MyFileReadingMain.example();
