@@ -19,6 +19,7 @@ import com.sparrowww.java.sololearn.myoverloading.MyOverloadingMain;
 import com.sparrowww.java.sololearn.mypolymorphism.MyPolymorphismMain;
 import com.sparrowww.java.sololearn.mysortinglist.MySortingListMain;
 import com.sparrowww.java.sololearn.mystatic.MyStaticMain;
+import com.sparrowww.java.sololearn.mytemplate.MyTemplateFuncMain;
 import com.sparrowww.java.sololearn.mythreads.MyThreadMain;
 import com.sparrowww.java.sololearn.mythreads.MyThreadMainLoop;
 import com.sparrowww.java.sololearn.mytypecasting.MyTypeCastingMain;
@@ -33,11 +34,15 @@ public class Main {
         System.out.println("Hello, World!!!");
         //SLEEP(10);
 
+        MyBasicObj obj;
+
         startTimeMeasure();
-        MyBasicsJava1 obj = new MyBasicsJava1();
+        obj = new MyCreditCalc();
         finishTimeMeasure();
 
         if (FLAG_NO_EXECUTE) {
+            obj = new MyBasicsJava1();
+            MyTemplateFuncMain.example();
             MyHashMapMain.exampleEntry();
             MyHashMapMain.exampleSearchMax();
             MyFileWritingMain.example();
