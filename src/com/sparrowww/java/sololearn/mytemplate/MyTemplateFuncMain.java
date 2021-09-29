@@ -18,7 +18,7 @@ public class MyTemplateFuncMain {
         }
         catch (Exception e)
         {
-            Print.printText(e.toString().concat(" i1"));
+            Print.printTextLn(e.toString().concat(" i1"));
         }
 
         try {
@@ -26,7 +26,7 @@ public class MyTemplateFuncMain {
         }
         catch (Exception e)
         {
-            Print.printText(e.toString().concat(" i2"));
+            Print.printTextLn(e.toString().concat(" i2"));
         }
 
         Print.printTextPlusParam(i1, i2);

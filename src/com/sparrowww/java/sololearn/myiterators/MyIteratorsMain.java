@@ -19,7 +19,7 @@ public class MyIteratorsMain {
 
         while (itrInt.hasNext())
         {
-            Print.printText(itrInt.next());
+            Print.printTextLn(itrInt.next());
         }
 
         removeBeginElement(mArrList.iterator());

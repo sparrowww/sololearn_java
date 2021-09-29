@@ -16,7 +16,7 @@ public class MyFileWritingMain {
             myFormatter.format("float = %.5f\n", 3.14159);
             myFormatter.format("int = %d\n", 42);
             myFormatter.format("boolean = %b\n", true);
-            Print.printText("Введите свой текст далее:");
+            Print.printTextLn("Введите свой текст далее:");
             myFormatter.format("My in Str = %s\n", scan.next());
             myFormatter.close();
         }

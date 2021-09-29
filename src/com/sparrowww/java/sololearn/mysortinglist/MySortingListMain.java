@@ -15,19 +15,19 @@ public class MySortingListMain {
         mArrList.add("magenta");
         mArrList.add("cyan");
 
-        Print.printText("До сортировки:");
+        Print.printTextLn("До сортировки:");
         Print.printStrings(mArrList);
 
         Collections.sort(mArrList);
-        Print.printText("После сортировки:");
+        Print.printTextLn("После сортировки:");
         Print.printStrings(mArrList);
 
         Collections.reverse(mArrList);
-        Print.printText("После сортировки reverse:");
+        Print.printTextLn("После сортировки reverse:");
         Print.printStrings(mArrList);
 
         Collections.shuffle(mArrList);
-        Print.printText("После сортировки shuffle() \"random\":");
+        Print.printTextLn("После сортировки shuffle() \"random\":");
         Print.printStrings(mArrList);
 
     }

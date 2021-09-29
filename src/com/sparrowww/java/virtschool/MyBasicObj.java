@@ -1,4 +1,5 @@
 package com.sparrowww.java.virtschool;
 
-public interface MyBasicObj {
+public class MyBasicObj {
+    public void touch(){}
 }

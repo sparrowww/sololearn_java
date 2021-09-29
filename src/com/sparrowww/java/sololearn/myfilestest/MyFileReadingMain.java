@@ -24,7 +24,7 @@ public class MyFileReadingMain {
                 Print.printTextPlusParam("Нет такого файла", fileName );
             }
         }catch (Exception e){
-            Print.printText(e.toString());
+            Print.printTextLn(e.toString());
         }
 
 
@@ -36,7 +36,7 @@ public class MyFileReadingMain {
         ArrayList<String> strList = new ArrayList<>();
 
         if (!withLambda) {
-            Print.printText("Вывод файла!");
+            Print.printTextLn("Вывод файла!");
             while (scan.hasNext()) {
                 strList.add(scan.next());
             }
@@ -49,7 +49,7 @@ public class MyFileReadingMain {
             }
         }
         else {
-            Print.printText("Вывод файла с лямбдой!");
+            Print.printTextLn("Вывод файла с лямбдой!");
             AtomicInteger Itr = new AtomicInteger();
             scan.forEachRemaining(strList::add);
             strList.forEach((Str)->{Print.printTextPlusParam(Itr,Str);Itr.getAndIncrement();});

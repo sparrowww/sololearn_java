@@ -20,9 +20,21 @@ public class Print {
     public static void printTextPlusParam( Object param ){
         printTextPlusParam("param", param);
     }
-    public static void printText( Object text ){
-        String str="";
+    public static void printTextLn(Object text ){
         if (text == null) text = "null";
         System.out.println(text);
+    }
+    public static void printTextLn(){
+        printTextLn("");
+    }
+    public static void printText(Object text, Object separator ){
+        String str="";
+        if (text == null) text = "null";
+        if (separator == null) separator = "null";
+        str = str.concat(text.toString()).concat(separator.toString());
+        System.out.print(str);
+    }
+    public static void printText(Object text ){
+        printText(text, "|");
     }
 }

@@ -2,17 +2,17 @@ package com.sparrowww.java.virtschool;
 
 import com.sparrowww.java.Print;
 
-import java.util.Scanner;
-
-public class MyBasicsJava1 implements MyBasicObj {
+public class MyBasicsJava1 extends MyBasicObj {
     public MyBasicsJava1(){
-        Print.printText("Основы Java-программирования I");
+        Print.printTextLn("Основы Java-программирования I");
         example();
     }
     private void example(){
         /** HO-HO-HO
          * */
-        typeCast();
+        printNumbers();
+//        compareTwoDoubles();
+//        typeCast();
 //        getCurrentTime2();
 //        getCurrentTime(); //FIXME не правильно!!!
 //        formatNumbers();
@@ -20,14 +20,41 @@ public class MyBasicsJava1 implements MyBasicObj {
 //        Scanner scanner = new Scanner(System.in);
 //        calcCircleArea(scanner.nextDouble());
     }
+    private void printNumbers(){
+        final int size = 10;
+        for (int i = 0; i <= size; ++i)
+        {
+            if ( i <= size/2) {
+                for (int j = 0; j < i + 1; ++j) {
+                    Print.printText(j);
+                }
+            }
+            else
+            {
+                for (int j = 0; j < size - i  + 1; ++j) {
+                    Print.printText(j);
+                }
+            }
+            Print.printTextLn();
+        }
+    }
+    private void compareTwoDoubles(){
+        final double EPSILON = 1E-14; // 1E-7 to float
+        double d1 = 0.5;
+        double d2 = 1.0 - 0.1 - 0.1 - 0.1 - 0.1 - 0.1;
+        Print.printTextPlusParam("d1",d1);
+        Print.printTextPlusParam("d2",d2);
+        boolean resDD = Math.abs(d1-d2) < EPSILON;
+        Print.printTextPlusParam("d1~==d2?",resDD);
+    }
     private void typeCast(){
         double d1 = 15.49;
         int i1 = (int)d1;
-        Print.printText(i1);
+        Print.printTextLn(i1);
         int i2 = (int)(d1 + 0.5);
-        Print.printText(i2);
+        Print.printTextLn(i2);
         int i3 = (int)(d1 + 0.01 + 0.5);
-        Print.printText(i3);
+        Print.printTextLn(i3);
     }
     private void getCurrentTime2(){
         final int MILLISECONDS_PER_SECOND = 1000, SECONDS_PER_MINUTE = 60;

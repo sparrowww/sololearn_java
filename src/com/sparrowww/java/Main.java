@@ -32,16 +32,19 @@ public class Main {
     public static void main(String[] args){
 	    // write your code here
         System.out.println("Hello, World!!!");
-        //SLEEP(10);
-
-        MyBasicObj obj;
+        int sleepTime = 1;
+        SLEEP(sleepTime);
 
         startTimeMeasure();
-        obj = new MyCreditCalc();
+        MyBasicObj obj = new MyBasicsJava1(); obj.touch();
         finishTimeMeasure();
 
         if (FLAG_NO_EXECUTE) {
-            obj = new MyBasicsJava1();
+            obj = new MyLeapYearCalc(); obj.touch();
+            obj = new MyBodyMassIndex(); obj.touch();
+            obj = new MyMoneyConverter(); obj.touch();
+            obj = new MyCreditCalc(); obj.touch();
+            obj = new MyBasicsJava1(); obj.touch();
             MyTemplateFuncMain.example();
             MyHashMapMain.exampleEntry();
             MyHashMapMain.exampleSearchMax();

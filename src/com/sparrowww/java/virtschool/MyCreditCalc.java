@@ -2,7 +2,7 @@ package com.sparrowww.java.virtschool;
 
 import com.sparrowww.java.Print;
 
-public class MyCreditCalc implements MyBasicObj {
+public class MyCreditCalc extends MyBasicObj {
     public MyCreditCalc(){
         calcFunc();
     }
