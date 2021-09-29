@@ -36,7 +36,7 @@ public class Main {
         SLEEP(sleepTime);
 
         startTimeMeasure();
-        MyBasicObj obj = new MyBasicsJava1(); obj.touch();
+        MyBasicObj obj = new MyBasicsJava2(); obj.touch();
         finishTimeMeasure();
 
         if (FLAG_NO_EXECUTE) {
