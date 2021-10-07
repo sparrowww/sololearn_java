@@ -36,15 +36,15 @@ public class Main {
         SLEEP(sleepTime);
 
         startTimeMeasure();
-        MyBasicObj obj = new MyBasicsJava2(); obj.touch();
+        MyBasicsJava2 obj6 = new MyBasicsJava2(); obj6.touch();
         finishTimeMeasure();
 
         if (FLAG_NO_EXECUTE) {
-            obj = new MyLeapYearCalc(); obj.touch();
-            obj = new MyBodyMassIndex(); obj.touch();
-            obj = new MyMoneyConverter(); obj.touch();
-            obj = new MyCreditCalc(); obj.touch();
-            obj = new MyBasicsJava1(); obj.touch();
+            MyLeapYearCalc obj5 = new MyLeapYearCalc(); obj5.touch();
+            MyBodyMassIndex obj4 = new MyBodyMassIndex(); obj4.touch();
+            MyMoneyConverter obj3 = new MyMoneyConverter(); obj3.touch();
+            MyCreditCalc obj2 = new MyCreditCalc(); obj2.touch();
+            MyBasicsJava1 obj1 = new MyBasicsJava1(); obj1.touch();
             MyTemplateFuncMain.example();
             MyHashMapMain.exampleEntry();
             MyHashMapMain.exampleSearchMax();
