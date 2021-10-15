@@ -36,10 +36,11 @@ public class Main {
         SLEEP(sleepTime);
 
         startTimeMeasure();
-        MyBasicsJava2 obj6 = new MyBasicsJava2(); obj6.touch();
+        MyMultidimensionalArray obj7 = new MyMultidimensionalArray(); obj7.touch();
         finishTimeMeasure();
 
         if (FLAG_NO_EXECUTE) {
+            MyBasicsJava2 obj6 = new MyBasicsJava2(); obj6.touch();
             MyLeapYearCalc obj5 = new MyLeapYearCalc(); obj5.touch();
             MyBodyMassIndex obj4 = new MyBodyMassIndex(); obj4.touch();
             MyMoneyConverter obj3 = new MyMoneyConverter(); obj3.touch();
