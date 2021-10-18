@@ -36,10 +36,12 @@ public class Main {
         SLEEP(sleepTime);
 
         startTimeMeasure();
-        MyMultidimensionalArray obj7 = new MyMultidimensionalArray(); obj7.touch();
+
         finishTimeMeasure();
 
         if (FLAG_NO_EXECUTE) {
+            MyRecursion obj8 = new MyRecursion(); obj8.touch();
+            MyMultidimensionalArray obj7 = new MyMultidimensionalArray(); obj7.touch();
             MyBasicsJava2 obj6 = new MyBasicsJava2(); obj6.touch();
             MyLeapYearCalc obj5 = new MyLeapYearCalc(); obj5.touch();
             MyBodyMassIndex obj4 = new MyBodyMassIndex(); obj4.touch();
