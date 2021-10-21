@@ -36,7 +36,7 @@ public class Main {
         SLEEP(sleepTime);
 
         startTimeMeasure();
-
+        MyRegularExpression obj9 = new MyRegularExpression(); obj9.touch();
         finishTimeMeasure();
 
         if (FLAG_NO_EXECUTE) {
