@@ -7,12 +7,6 @@ import java.math.BigDecimal;
 public class MyRegularExpression extends MyBasicObj {
     public MyRegularExpression(){
         example();
-        String s1 = "123";
-        String s2 = s1.trim();
-        if (s1 == s2)
-            Print.printTextLn(true);
-        else
-            Print.printTextLn(false);
     }
     private void example(){
         String progLangs = "C++,C,Java,Go";
