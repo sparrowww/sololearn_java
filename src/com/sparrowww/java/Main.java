@@ -36,10 +36,11 @@ public class Main {
         SLEEP(sleepTime);
 
         startTimeMeasure();
-        MyRegularExpression obj9 = new MyRegularExpression(); obj9.touch();
+        MyInstanceOf obj10 = new MyInstanceOf(); obj10.touch();
         finishTimeMeasure();
 
         if (FLAG_NO_EXECUTE) {
+            MyRegularExpression obj9 = new MyRegularExpression(); obj9.touch();
             MyRecursion obj8 = new MyRecursion(); obj8.touch();
             MyMultidimensionalArray obj7 = new MyMultidimensionalArray(); obj7.touch();
             MyBasicsJava2 obj6 = new MyBasicsJava2(); obj6.touch();
