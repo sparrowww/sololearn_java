@@ -36,19 +36,22 @@ public class Main {
         SLEEP(sleepTime);
 
         startTimeMeasure();
-        MyInstanceOf obj10 = new MyInstanceOf(); obj10.touch();
+        MyBasicObj obj;
+        obj = new MyDefaultAndFinal();
+        obj.touch();
         finishTimeMeasure();
 
         if (FLAG_NO_EXECUTE) {
-            MyRegularExpression obj9 = new MyRegularExpression(); obj9.touch();
-            MyRecursion obj8 = new MyRecursion(); obj8.touch();
-            MyMultidimensionalArray obj7 = new MyMultidimensionalArray(); obj7.touch();
-            MyBasicsJava2 obj6 = new MyBasicsJava2(); obj6.touch();
-            MyLeapYearCalc obj5 = new MyLeapYearCalc(); obj5.touch();
-            MyBodyMassIndex obj4 = new MyBodyMassIndex(); obj4.touch();
-            MyMoneyConverter obj3 = new MyMoneyConverter(); obj3.touch();
-            MyCreditCalc obj2 = new MyCreditCalc(); obj2.touch();
-            MyBasicsJava1 obj1 = new MyBasicsJava1(); obj1.touch();
+            obj = new MyInstanceOf();
+            obj = new MyRegularExpression();
+            obj = new MyRecursion();
+            obj = new MyMultidimensionalArray();
+            obj = new MyBasicsJava2();
+            obj = new MyLeapYearCalc();
+            obj = new MyBodyMassIndex();
+            obj = new MyMoneyConverter();
+            obj = new MyCreditCalc();
+            obj = new MyBasicsJava1();
             MyTemplateFuncMain.example();
             MyHashMapMain.exampleEntry();
             MyHashMapMain.exampleSearchMax();
